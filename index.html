@@ -1,108 +1,104 @@
-<div class="section">
-<h2>📋 Order Form</h2>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<input type="text" id="uid" placeholder="Enter Free Fire UID">
+<title>XTOPUP</title>
 
-<select id="package" style="width:100%;padding:12px;border-radius:8px;margin-top:10px;">
-<option>25 Diamond - 25৳</option>
-<option>50 Diamond - 46৳</option>
-<option>100 Diamond - 82৳</option>
-<option>115 Diamond - 92৳</option>
-<option>240 Diamond - 182৳</option>
-<option>355 Diamond - 272৳</option>
-<option>505 Diamond - 389৳</option>
-<option>850 Diamond - 645৳</option>
-<option>1090 Diamond - 835৳</option>
-<option>1240 Diamond - 950৳</option>
-<option>1850 Diamond - 1450৳</option>
-<option>2530 Diamond - 1950৳</option>
-<option>5060 Diamond - 3890৳</option>
-<option>Weekly Membership - 180৳</option>
-<option>Monthly Membership - 850৳</option>
-<option>Weekly Lite 1X - 66৳</option>
-<option>Weekly Lite 2X - 132৳</option>
-<option>Evo Access 7 Days - 132৳</option>
-<option>Full Level Up Pass - 520৳</option>
-</select>
-
-<button onclick="sendOrder()" style="margin-top:15px;">
-🚀 Submit Order
-</button>
-</div>
-
-<script>
-function sendOrder(){
-
-let uid = document.getElementById("uid").value;
-let pack = document.getElementById("package").value;
-
-let msg =
-`🔥 XTOPUP ORDER 🔥
-
-🆔 UID: ${uid}
-
-💎 Package: ${pack}
-
-✅ Payment Sent
-
-Please check my order.`;
-
-window.open(
-`https://wa.me/8801325694336?text=${encodeURIComponent(msg)}`,
-'_blank'
-);
-
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
-</script>
+
+body{
+background:#0f0f0f;
+color:white;
+}
+
+.header{
+background:linear-gradient(135deg,#111,#1a1a1a);
+padding:30px;
+text-align:center;
+border-bottom:2px solid gold;
+}
+
+.logo{
+font-size:35px;
+font-weight:bold;
+color:gold;
+}
+
+.tag{
+color:#ccc;
+margin-top:8px;
+}
+
 .container{
-width:95%;
-margin:auto;
+padding:15px;
 }
 
 .card{
-background:white;
-border-radius:10px;
+background:#181818;
+border:1px solid #2b2b2b;
+border-radius:15px;
 padding:15px;
 margin-bottom:15px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
+box-shadow:0 0 15px rgba(255,215,0,.15);
 }
 
-.item{
+.title{
+font-size:22px;
+font-weight:bold;
+color:gold;
+margin-bottom:15px;
+}
+
+input,select{
+width:100%;
+padding:14px;
+margin-top:10px;
+background:#111;
+border:1px solid #444;
+border-radius:10px;
+color:white;
+}
+
+.package{
 display:flex;
 justify-content:space-between;
-padding:10px;
-border-bottom:1px solid #ddd;
+padding:12px;
+margin-top:10px;
+background:#111;
+border-radius:10px;
+border:1px solid #333;
 }
 
 .price{
-color:#ff6600;
+color:gold;
 font-weight:bold;
-}
-
-input{
-width:100%;
-padding:12px;
-margin:10px 0;
-border:1px solid #ccc;
-border-radius:8px;
 }
 
 button{
 width:100%;
 padding:15px;
-background:#ff008c;
-color:white;
+margin-top:15px;
 border:none;
-border-radius:8px;
+border-radius:12px;
+background:gold;
+color:black;
 font-size:18px;
+font-weight:bold;
+cursor:pointer;
 }
 
 .footer{
-background:#111827;
-color:white;
-padding:20px;
 text-align:center;
-margin-top:20px;
+padding:20px;
+color:#999;
 }
 </style>
 </head>
@@ -110,103 +106,96 @@ margin-top:20px;
 <body>
 
 <div class="header">
-🔥 XTOPUP 🔥
-</div>
-
-<div class="banner">
-<h2>Fast & Trusted Gaming Top-Up</h2>
-<p>Free Fire Diamond, Membership & More</p>
-</div>
-
-<div class="section-title">
-Free Fire TopUp
+<div class="logo">🖤 XTOPUP</div>
+<div class="tag">Premium Gaming Top-Up Service</div>
 </div>
 
 <div class="container">
 
 <div class="card">
-<h3>🆔 Account Info</h3>
-<input type="text" placeholder="Enter Free Fire UID">
-<input type="text" placeholder="Player Name">
-</div>
+<div class="title">🆔 Order Form</div>
 
-<div class="card">
-<h3>💎 Diamond TopUp</h3>
+<input type="text" id="uid" placeholder="Enter Free Fire UID">
 
-<div class="item"><span>25 Diamond</span><span class="price">25৳</span></div>
-<div class="item"><span>50 Diamond</span><span class="price">46৳</span></div>
-<div class="item"><span>100 Diamond</span><span class="price">82৳</span></div>
-<div class="item"><span>115 Diamond</span><span class="price">92৳</span></div>
-<div class="item"><span>240 Diamond</span><span class="price">182৳</span></div>
-<div class="item"><span>355 Diamond</span><span class="price">272৳</span></div>
-<div class="item"><span>505 Diamond</span><span class="price">389৳</span></div>
-<div class="item"><span>850 Diamond</span><span class="price">645৳</span></div>
-<div class="item"><span>1090 Diamond</span><span class="price">835৳</span></div>
-<div class="item"><span>1240 Diamond</span><span class="price">950৳</span></div>
-<div class="item"><span>1850 Diamond</span><span class="price">1450৳</span></div>
-<div class="item"><span>2530 Diamond</span><span class="price">1950৳</span></div>
-<div class="item"><span>5060 Diamond</span><span class="price">3890৳</span></div>
-</div>
+<select id="package">
+<option>25 Diamond - 25৳</option>
+<option>50 Diamond - 46৳</option>
+<option>100 Diamond - 82৳</option>
+<option>240 Diamond - 182৳</option>
+<option>505 Diamond - 389৳</option>
+<option>850 Diamond - 645৳</option>
+<option>Weekly Membership - 180৳</option>
+<option>Monthly Membership - 850৳</option>
+</select>
 
-<div class="card">
-<h3>👑 Membership</h3>
-
-<div class="item"><span>Weekly Membership</span><span class="price">180৳</span></div>
-<div class="item"><span>Monthly Membership</span><span class="price">850৳</span></div>
-</div>
-
-<div class="card">
-<h3>🎟️ Weekly Lite</h3>
-
-<div class="item"><span>1X Weekly Lite</span><span class="price">66৳</span></div>
-<div class="item"><span>2X Weekly Lite</span><span class="price">132৳</span></div>
-<div class="item"><span>3X Weekly Lite</span><span class="price">198৳</span></div>
-<div class="item"><span>5X Weekly Lite</span><span class="price">330৳</span></div>
-<div class="item"><span>10X Weekly Lite</span><span class="price">660৳</span></div>
-</div>
-
-<div class="card">
-<h3>⚡ Evo Access</h3>
-
-<div class="item"><span>3 Days</span><span class="price">88৳</span></div>
-<div class="item"><span>7 Days</span><span class="price">132৳</span></div>
-<div class="item"><span>14 Days</span><span class="price">264৳</span></div>
-<div class="item"><span>30 Days</span><span class="price">392৳</span></div>
-</div>
-
-<div class="card">
-<h3>📈 Level Up Pass</h3>
-
-<div class="item"><span>Level 6</span><span class="price">48৳</span></div>
-<div class="item"><span>Level 10</span><span class="price">84৳</span></div>
-<div class="item"><span>Level 15</span><span class="price">84৳</span></div>
-<div class="item"><span>Level 20</span><span class="price">84৳</span></div>
-<div class="item"><span>Level 25</span><span class="price">84৳</span></div>
-<div class="item"><span>Level 30</span><span class="price">118৳</span></div>
-<div class="item"><span>Full Level Up Pass</span><span class="price">520৳</span></div>
-</div>
-
-<div class="card">
-<h3>💳 Payment Numbers</h3>
-
-<p>bKash: 01325694336 (Personal)</p>
-<p>Nagad: 01325694336 (Personal)</p>
-<p>Rocket: 01325694336 (Personal)</p>
-<p>Upay: 01325694336 (Personal)</p>
-
-<br>
-
-<button onclick="alert('✅ Order Submitted!\n\nSend Payment Screenshot To Admin\n\nPayment Number: 01325694336')">
-Order Now
+<button onclick="sendOrder()">
+🚀 Order on WhatsApp
 </button>
+</div>
+
+<div class="card">
+<div class="title">💎 Popular Packages</div>
+
+<div class="package">
+<span>Weekly Membership</span>
+<span class="price">180৳</span>
+</div>
+
+<div class="package">
+<span>Monthly Membership</span>
+<span class="price">850৳</span>
+</div>
+
+<div class="package">
+<span>505 Diamond</span>
+<span class="price">389৳</span>
+</div>
+
+<div class="package">
+<span>850 Diamond</span>
+<span class="price">645৳</span>
+</div>
+
+</div>
+
+<div class="card">
+<div class="title">💳 Payment Number</div>
+
+<p>📱 bKash: 01325694336</p><br>
+<p>📱 Nagad: 01325694336</p><br>
+<p>📱 Rocket: 01325694336</p><br>
+<p>📱 Upay: 01325694336</p>
 
 </div>
 
 </div>
 
 <div class="footer">
-© 2026 XTOPUP | Fast & Trusted Top-Up Service
+© 2026 XTOPUP | Black Gold Edition
 </div>
+
+<script>
+function sendOrder(){
+
+let uid=document.getElementById("uid").value;
+let pack=document.getElementById("package").value;
+
+let msg=
+`🔥 XTOPUP ORDER
+
+UID: ${uid}
+
+Package: ${pack}
+
+Payment Number: 01325694336`;
+
+window.open(
+'https://wa.me/8801325694336?text='+
+encodeURIComponent(msg)
+);
+
+}
+</script>
 
 </body>
 </html>
