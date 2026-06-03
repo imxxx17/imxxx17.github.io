@@ -1,40 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>XTOPUP</title>
+<div class="section">
+<h2>📋 Order Form</h2>
 
-<style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f2f4f8;
+<input type="text" id="uid" placeholder="Enter Free Fire UID">
+
+<select id="package" style="width:100%;padding:12px;border-radius:8px;margin-top:10px;">
+<option>25 Diamond - 25৳</option>
+<option>50 Diamond - 46৳</option>
+<option>100 Diamond - 82৳</option>
+<option>115 Diamond - 92৳</option>
+<option>240 Diamond - 182৳</option>
+<option>355 Diamond - 272৳</option>
+<option>505 Diamond - 389৳</option>
+<option>850 Diamond - 645৳</option>
+<option>1090 Diamond - 835৳</option>
+<option>1240 Diamond - 950৳</option>
+<option>1850 Diamond - 1450৳</option>
+<option>2530 Diamond - 1950৳</option>
+<option>5060 Diamond - 3890৳</option>
+<option>Weekly Membership - 180৳</option>
+<option>Monthly Membership - 850৳</option>
+<option>Weekly Lite 1X - 66৳</option>
+<option>Weekly Lite 2X - 132৳</option>
+<option>Evo Access 7 Days - 132৳</option>
+<option>Full Level Up Pass - 520৳</option>
+</select>
+
+<button onclick="sendOrder()" style="margin-top:15px;">
+🚀 Submit Order
+</button>
+</div>
+
+<script>
+function sendOrder(){
+
+let uid = document.getElementById("uid").value;
+let pack = document.getElementById("package").value;
+
+let msg =
+`🔥 XTOPUP ORDER 🔥
+
+🆔 UID: ${uid}
+
+💎 Package: ${pack}
+
+✅ Payment Sent
+
+Please check my order.`;
+
+window.open(
+`https://wa.me/8801325694336?text=${encodeURIComponent(msg)}`,
+'_blank'
+);
+
 }
-
-.header{
-background:#ff008c;
-color:white;
-padding:20px;
-text-align:center;
-font-size:32px;
-font-weight:bold;
-}
-
-.banner{
-background:#111827;
-color:white;
-padding:20px;
-text-align:center;
-}
-
-.section-title{
-text-align:center;
-font-size:28px;
-font-weight:bold;
-margin:20px 0;
-}
-
+</script>
 .container{
 width:95%;
 margin:auto;
