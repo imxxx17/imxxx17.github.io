@@ -1,201 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>XTOPUP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marwa ❤️</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
 body{
-background:#0f0f0f;
+margin:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#000000,#1a001a);
 color:white;
-}
-
-.header{
-background:linear-gradient(135deg,#111,#1a1a1a);
-padding:30px;
 text-align:center;
-border-bottom:2px solid gold;
 }
 
-.logo{
-font-size:35px;
-font-weight:bold;
-color:gold;
+.hero{
+padding:80px 20px;
 }
 
-.tag{
-color:#ccc;
-margin-top:8px;
+.hero h1{
+font-size:45px;
+color:#ff4da6;
 }
 
-.container{
-padding:15px;
+.hero p{
+font-size:18px;
+color:#ffd6eb;
 }
 
 .card{
-background:#181818;
-border:1px solid #2b2b2b;
-border-radius:15px;
-padding:15px;
-margin-bottom:15px;
-box-shadow:0 0 15px rgba(255,215,0,.15);
+background:rgba(255,255,255,0.05);
+margin:20px;
+padding:25px;
+border-radius:20px;
+border:1px solid #ff4da6;
+box-shadow:0 0 20px rgba(255,77,166,.3);
 }
 
-.title{
-font-size:22px;
-font-weight:bold;
-color:gold;
-margin-bottom:15px;
-}
-
-input,select{
-width:100%;
-padding:14px;
-margin-top:10px;
-background:#111;
-border:1px solid #444;
-border-radius:10px;
-color:white;
-}
-
-.package{
-display:flex;
-justify-content:space-between;
-padding:12px;
-margin-top:10px;
-background:#111;
-border-radius:10px;
-border:1px solid #333;
-}
-
-.price{
-color:gold;
-font-weight:bold;
-}
-
-button{
-width:100%;
-padding:15px;
-margin-top:15px;
-border:none;
-border-radius:12px;
-background:gold;
-color:black;
-font-size:18px;
-font-weight:bold;
-cursor:pointer;
+h2{
+color:#ff66b3;
 }
 
 .footer{
-text-align:center;
 padding:20px;
-color:#999;
+margin-top:30px;
+color:#aaa;
 }
 </style>
 </head>
 
 <body>
 
-<div class="header">
-<div class="logo">🖤 XTOPUP</div>
-<div class="tag">Premium Gaming Top-Up Service</div>
-</div>
-
-<div class="container">
-
-<div class="card">
-<div class="title">🆔 Order Form</div>
-
-<input type="text" id="uid" placeholder="Enter Free Fire UID">
-
-<select id="package">
-<option>25 Diamond - 25৳</option>
-<option>50 Diamond - 46৳</option>
-<option>100 Diamond - 82৳</option>
-<option>240 Diamond - 182৳</option>
-<option>505 Diamond - 389৳</option>
-<option>850 Diamond - 645৳</option>
-<option>Weekly Membership - 180৳</option>
-<option>Monthly Membership - 850৳</option>
-</select>
-
-<button onclick="sendOrder()">
-🚀 Order on WhatsApp
-</button>
+<div class="hero">
+<h1>💖 Marwa 💖</h1>
+<p>Every heartbeat reminds me of you.</p>
 </div>
 
 <div class="card">
-<div class="title">💎 Popular Packages</div>
-
-<div class="package">
-<span>Weekly Membership</span>
-<span class="price">180৳</span>
-</div>
-
-<div class="package">
-<span>Monthly Membership</span>
-<span class="price">850৳</span>
-</div>
-
-<div class="package">
-<span>505 Diamond</span>
-<span class="price">389৳</span>
-</div>
-
-<div class="package">
-<span>850 Diamond</span>
-<span class="price">645৳</span>
-</div>
-
+<h2>🌹 For You</h2>
+<p>
+তুমি আমার জীবনের সবচেয়ে সুন্দর অনুভূতি।
+তোমার হাসি আমার দিনের আলো,
+আর তোমার উপস্থিতি আমার শান্তি।
+</p>
 </div>
 
 <div class="card">
-<div class="title">💳 Payment Number</div>
-
-<p>📱 bKash: 01325694336</p><br>
-<p>📱 Nagad: 01325694336</p><br>
-<p>📱 Rocket: 01325694336</p><br>
-<p>📱 Upay: 01325694336</p>
-
+<h2>💌 Special Message</h2>
+<p>
+যত দিন যাবে, ততই তোমাকে নতুন করে ভালোবাসবো।
+</p>
 </div>
 
+<div class="card">
+<h2>❤️ Forever</h2>
+<p>
+You are my favorite chapter in life.
+</p>
 </div>
 
 <div class="footer">
-© 2026 XTOPUP | Black Gold Edition
+🖤 Made With Love For Marwa 💖
 </div>
-
-<script>
-function sendOrder(){
-
-let uid=document.getElementById("uid").value;
-let pack=document.getElementById("package").value;
-
-let msg=
-`🔥 XTOPUP ORDER
-
-UID: ${uid}
-
-Package: ${pack}
-
-Payment Number: 01325694336`;
-
-window.open(
-'https://wa.me/8801325694336?text='+
-encodeURIComponent(msg)
-);
-
-}
-</script>
 
 </body>
 </html>
